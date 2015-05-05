@@ -1,4 +1,4 @@
-package com.smzh.util;
+package com.smzh.util.map;
 
 public class Person {
 	private int id;

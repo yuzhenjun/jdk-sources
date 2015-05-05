@@ -5,11 +5,12 @@
  * @author zhenjun.yu
  * @date 2015年4月28日 下午1:27:23
  */
-package com.smzh.util;
+package com.smzh.util.map;
 
 import java.util.HashMap;
 import java.util.IdentityHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * @author zhenjun.yu
@@ -33,6 +34,12 @@ public class TestIdentityMap {
 		identity.put(new String("zhenjun"),"yu");
 		System.out.println(identity.toString());
 		System.out.println(identity.get("zhenjun"));
+		
+		
+		Map<String, String> tree=new TreeMap<String, String>();
+		tree.put("jun", "123");
+		tree.put("jun", "124");
+		System.out.println(tree.toString());
 	}
 
 }
