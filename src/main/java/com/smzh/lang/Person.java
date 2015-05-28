@@ -1,7 +1,11 @@
-package com.smzh.util.map;
+package com.smzh.lang;
+
+import com.smzh.lang.impl.PersonName;
+
 
 public class Person {
 	private int id;
+	@PersonName(name="zhenjun")
 	private String name;
 
 	public Person(){
