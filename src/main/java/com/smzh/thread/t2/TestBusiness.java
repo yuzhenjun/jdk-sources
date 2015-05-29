@@ -7,7 +7,6 @@
  */
 package com.smzh.thread.t2;
 
-import java.util.concurrent.ExecutorService;
 
 /**
  * @author zhenjun.yu
