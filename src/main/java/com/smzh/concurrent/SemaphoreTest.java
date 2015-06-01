@@ -5,7 +5,7 @@
  * @author zhenjun.yu
  * @date 2015年5月29日 下午5:14:55
  */
-package com.smzh.thread.lock;
+package com.smzh.concurrent;
 
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
@@ -38,7 +38,7 @@ public class SemaphoreTest {
 					}
 					System.out.println("线程"+Thread.currentThread().getName()+"已进来拉屎,当前有"+(3-sp.availablePermits())+"个线程在拉屎");
 					try {
-						Thread.sleep(new Random().nextInt(10000));
+						Thread.sleep((long)(Math.random()*10000));
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
