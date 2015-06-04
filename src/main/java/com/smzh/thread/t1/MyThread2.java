@@ -21,6 +21,7 @@ public class MyThread2 implements Runnable {
 	 */
 	private int ticket = 1000;
 
+	@SuppressWarnings("static-access")
 	@Override
 	public void run() {
 		for (int i = 0; i <100; i++) {
