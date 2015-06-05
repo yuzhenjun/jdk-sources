@@ -24,7 +24,6 @@ public class ConcurrentMapTest {
 		Map<String, String> map=new HashMap<String, String>();
 		Collections.synchronizedMap(map);
 		ConcurrentHashMap<String , String> cMap=new ConcurrentHashMap<String, String>();
-		
 	}
 
 }
