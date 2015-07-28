@@ -8,9 +8,7 @@
 package com.smzh.util.map;
 
 import java.util.HashMap;
-import java.util.IdentityHashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 /**
  * @author zhenjun.yu
@@ -22,24 +20,19 @@ public class TestIdentityMap {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Person person= new Person(123,"zhenjun");
-		Person person2=new Person(123,"zhenjun");
-		Map<String, String> map=new HashMap<String, String>();
-		//String str="zhenjun";
-		map.put(new String("zhenjun"), "yu");
-		map.put(new String("zhenjun"), "yu");
+		Map<Person, String> map=new HashMap<Person, String>();
+		map.put(new Person(123,"zhenjun"), "yu");
+		map.put(new Person(123,"zhenjun"), "yu");
 		System.out.println(map.toString());
-		IdentityHashMap<String, String> identity=new IdentityHashMap<String, String>();
-		identity.put(new String("zhenjun"), "yu");
-		identity.put(new String("zhenjun"),"yu");
-		System.out.println(identity.toString());
-		System.out.println(identity.get("zhenjun"));
+		System.out.println(map.get(new Person(123,"zhenjun")));
+		double d=12.3;
+		int i=12;
+		double dd=d%i;
+		System.out.println(Math.floor(d));
+		if(dd==0){
+			System.out.println("============");
+		}
 		
-		
-		Map<String, String> tree=new TreeMap<String, String>();
-		tree.put("jun", "123");
-		tree.put("jun", "124");
-		System.out.println(tree.toString());
 	}
 
 }

@@ -6,6 +6,7 @@ import java.util.Random;
 public class ReadWriteLockTest {
 
 	public static void main(String[] args) {
+		
 		final ReadWriteLock2 rwl=new ReadWriteLock2();
 		for(int i=0;i<3;i++){
 			new Thread(new Runnable() {
