@@ -7,7 +7,9 @@
  */
 package com.smzh.util.map;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -15,6 +17,10 @@ import java.util.Map;
 
  */
 public class TestIdentityMap {
+	
+	public static <T extends Comparable<T>> T max(List<T> list){
+		return null;
+	}
 
 	/**
 	 * @param args
@@ -33,6 +39,18 @@ public class TestIdentityMap {
 			System.out.println("============");
 		}
 		
+		List<Person1>lists=new ArrayList<Person1>();
+		TestIdentityMap.max(lists);
 	}
 
+}
+
+
+class Person1 implements Comparable<Person1>{
+
+	@Override
+	public int compareTo(Person1 o) {
+		return 0;
+	}
+	
 }
